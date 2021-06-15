@@ -110,6 +110,10 @@ describe('DeleteContact', () => {
   it('should delete a contact if a contact was chosen and "delete contact" was clicked', () => {
     const wrapper = mount(App)
     expect(wrapper.vm.contacts.length).toEqual(5)
+    console.log('--------------------------------------------')
+    console.log(wrapper.find('#contact-list'))
+    console.log(wrapper.vm.contacts.length)
+    console.log('--------------------------------------------')
     wrapper.find('#contact-list ul').trigger('click')
 
     const appForm = shallowMount(ContactForm, {
@@ -124,13 +128,14 @@ describe('DeleteContact', () => {
 })
 
 describe('Filtering Contacts', () => {
-  it('should display filtered contacts if search input was set', async () => {
+  it('should display filtered contacts if search input was set', () => {
     const wrapper = mount(App)
+    console.log('===========================================')
+    console.log(wrapper.findAll('#contact-list'))    
+    console.log('===========================================')
     expect(wrapper.findAll('#contact-list ul')).toHaveLength(5)
-    expect(wrapper.find('#contact-list ul').text()).toContain("John Brown")
-    
-    await wrapper.find("#search").setValue("kai")
-
+    expect(wrapper.find('#contact-list ul').text()).toContain("John Brown")    
+    wrapper.find("#search").setValue("kai")
     expect(wrapper.findAll('#contact-list ul')).toHaveLength(1)
     expect(wrapper.find('#contact-list ul').text()).not.toContain("John Brown")
     expect(wrapper.find('#contact-list ul').text()).toContain("Kaien")

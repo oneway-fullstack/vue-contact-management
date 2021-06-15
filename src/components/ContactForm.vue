@@ -93,6 +93,7 @@ export default {
        * contact.email array
        */
       this.contact.email.push('')
+      this.contact.phoneNumber.push('')
     },
     addPhone: function () {
       /**
@@ -100,6 +101,7 @@ export default {
        * contact.phoneNumber array
        */
       this.contact.phoneNumber.push('')
+      this.contact.email.push('')
     }
   }
 }

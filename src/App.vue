@@ -96,6 +96,7 @@ export default {
         el.style.borderRadius = '20px'
         el.style.color = 'white'
         el.style.fontVariant = 'all-petite-caps'
+        el.style.fontSize = '20px'
       }
     }
   },
@@ -105,7 +106,7 @@ export default {
        * Complete this function to return contacts
        * sorted by lastname in ascending order
        */
-      return this.contacts.sort((a, b) => (a.lastname > b.lastname) ? 1 : -1)
+      return this.contacts.sort((a, b) => (a.lastname.toLowerCase() > b.lastname.toLowerCase()) ? 1 : -1)
     },
     openNew: function () {
       /**
