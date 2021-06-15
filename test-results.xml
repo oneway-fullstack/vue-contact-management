@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="19" failures="5" time="1.358">
+  <testsuite name="tests/unit/specs/Contacts.spec.js" errors="0" failures="5" skipped="0" timestamp="2021-06-12T14:28:20" time="0.96" tests="19">
+    <testcase classname="App" name="should be an object" time="0.023">
+    </testcase>
+    <testcase classname="App" name="should be equal to 2" time="0.006">
+    </testcase>
+    <testcase classname="App" name="should be equal to John" time="0.007">
+    </testcase>
+    <testcase classname="App" name="should be equal to Brown" time="0.007">
+    </testcase>
+    <testcase classname="App" name="should be equal to Burrell" time="0.006">
+    </testcase>
+    <testcase classname="Computed" name="should filter contacts" time="0.005">
+    </testcase>
+    <testcase classname="Computed" name="should filter contacts, case of query should not matter" time="0.005">
+    </testcase>
+    <testcase classname="Computed" name="should filter contacts by phone" time="0.007">
+    </testcase>
+    <testcase classname="Sorting" name="should display the third element (index=2) with id=5" time="0.009">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 5
+Received: 1
+    at Object.it (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/tests/unit/specs/Contacts.spec.js:65:31)
+    at Object.asyncJestTest (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+    <testcase classname="Sorting" name="should display the third element (index=2) with firstname=randy" time="0.008">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;randy&quot;
+Received: &quot;jamie&quot;
+    at Object.it (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/tests/unit/specs/Contacts.spec.js:71:52)
+    at Object.asyncJestTest (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+    <testcase classname="ContactBubble Directive" name="should have background colour defined" time="0.005">
+    </testcase>
+    <testcase classname="ContactBubble Directive" name="should have font size 20px" time="0.009">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;20px&quot;
+Received: &quot;&quot;
+    at Object.it (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/tests/unit/specs/Contacts.spec.js:85:49)
+    at Object.asyncJestTest (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+    <testcase classname="CreateContact" name="should have property visible = false by default" time="0.01">
+    </testcase>
+    <testcase classname="CreateContact" name="should have property newCon = false by default" time="0.009">
+    </testcase>
+    <testcase classname="CreateContact" name="should not add a new contact if empty form was submitted" time="0.022">
+    </testcase>
+    <testcase classname="DeleteContact" name="should delete a contact if a contact was chosen and &quot;delete contact&quot; was clicked" time="0.018">
+      <failure>Error: [vue-test-utils]: find did not return #contact-list ul, cannot call trigger() on empty Wrapper
+    at throwError (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/@vue/test-utils/dist/vue-test-utils.js:1730:9)
+    at ErrorWrapper.trigger (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/@vue/test-utils/dist/vue-test-utils.js:8955:3)
+    at Object.it (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/tests/unit/specs/Contacts.spec.js:113:44)
+    at Object.asyncJestTest (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+    <testcase classname="Filtering Contacts" name="should display filtered contacts if search input was set" time="0.008">
+      <failure>Error: expect(received).toHaveLength(expected)
+
+Expected length: 5
+Received length: 0
+Received object: {&quot;selector&quot;: &quot;#contact-list ul&quot;}
+    at Object.it (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/tests/unit/specs/Contacts.spec.js:129:49)
+    at Object.asyncJestTest (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/home/oneway/workshop/devskill/devskiller-code-6XY7-YFW9-Y3-S1F/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+    <testcase classname="ContactForm" name="should display 2 inputs for emails after clicked &quot;add number&quot; once" time="0.004">
+    </testcase>
+    <testcase classname="ContactForm" name="should display 3 inputs for numbers after clicked &quot;add number&quot; twice" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>
